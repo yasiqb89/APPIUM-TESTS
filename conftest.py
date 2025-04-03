@@ -11,7 +11,7 @@ def driver():
     options.automation_name = "UiAutomator2"
     options.app_package = "io.appium.android.apis"
     options.app_activity = "io.appium.android.apis.ApiDemos"
-    options.no_reset = True
+    options.no_reset = False
 
     driver = webdriver.Remote("http://localhost:4723", options=options)
     yield driver
